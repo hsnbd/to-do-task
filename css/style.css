@@ -1,0 +1,67 @@
+body {
+    font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+    background: #ddd;
+}
+.body {
+	background: #fffccc;
+	padding: 0;
+	color: #444;
+/*	box-shadow: 2px 2px 1px #aaa;*/
+}
+.effect {
+  position: relative;
+}
+.effect:after{z-index: -1;position: absolute;content: "";bottom: 15px;right: 10px;left: auto;width: 50%;top: 80%;max-width:300px;background: #777;-webkit-box-shadow: 0 15px 10px #777;-moz-box-shadow: 0 15px 10px #777;box-shadow: 0 15px 10px #777;-webkit-transform: rotate(3deg);-moz-transform: rotate(3deg);-o-transform: rotate(3deg);-ms-transform: rotate(3deg);transform: rotate(3deg);}
+
+.logo {
+	padding: 8px;
+	background: #fffaaa;
+	box-shadow: 0 2px 0 #fffccc,
+				0 3px 0px #ccc;
+	color: #999;
+	text-shadow: -1px 1px 1px #ffffff, 1px 0px 1px #926e08;
+	font-size: 30px;
+	font-weight: bold;
+}
+.list {
+	list-style: none;
+	border-bottom: 1px dashed #ccc;
+	padding: 8px;
+	opacity: 0.9;
+}
+.done {
+	text-decoration: line-through;
+	color: #bbb;
+}
+.mark-done {
+	font-size: 12px;
+	background: #ccc;
+	padding: 2px;
+	border-radius: 5px;
+	opacity: 0.6;
+}
+.old {
+	color: red;
+}
+.new {
+	color: green;
+}
+.mark-done:hover {
+	opacity: 1;
+}
+input {
+	width: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+input[type=submit] {
+	background: #fffaaa;
+	box-shadow: 0 2px 0 #fffccc,
+				0 3px 0px #ccc;
+	padding: 10px;
+	color: #999;
+	text-shadow: -1px 1px 1px #ffffff, 1px 0px 1px #926e08;
+	font-weight: bolder;
+	cursor: pointer;
+}
